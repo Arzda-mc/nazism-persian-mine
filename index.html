@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17110d">
+<title>🍁 حزب آلمان | پرشین ماین</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:linear-gradient(135deg,#17110d,#302016,#17110d);
+  color:#f5e6d3;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+header{
+  text-align:center;
+  padding:35px 15px;
+  background:linear-gradient(135deg,#492817,#20140e);
+  border-bottom:2px solid #bd7132;
+}
+header img{
+  width:100px;height:100px;object-fit:cover;
+  border-radius:50%;border:3px solid #d98a43;
+  box-shadow:0 0 25px #d98a4370;
+}
+h1{margin:15px 0;color:#ffbd72}
+.subtitle{color:#d4b89b;font-size:13px}
+.container{max-width:950px;margin:30px auto;padding:15px}
+.card{
+  background:#ffffff0b;
+  border:1px solid #a86b3b66;
+  border-radius:20px;
+  padding:22px;
+  margin-bottom:20px;
+  box-shadow:0 10px 30px #0005;
+  animation:fadeIn .7s ease both;
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.leader{
+  display:flex;align-items:center;gap:18px;
+  flex-wrap:wrap;
+}
+.leader img{
+  width:85px;height:85px;object-fit:cover;
+  border-radius:18px;border:2px solid #d98a43;
+}
+button,.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#c87937,#85451f);
+  color:white;border:0;border-radius:12px;
+  padding:12px 20px;text-decoration:none;
+  cursor:pointer;font-size:14px;
+  transition:.25s;
+}
+button:hover,.btn:hover{transform:translateY(-3px);filter:brightness(1.15)}
+h2{color:#ffbd72;margin-bottom:15px}
+.server{
+  display:flex;align-items:center;gap:15px;
+}
+.server img{
+  width:75px;height:75px;object-fit:cover;
+  border-radius:15px;border:2px solid #bd7132;
+}
+footer{
+  text-align:center;padding:30px 15px;
+  color:#c9a98c;font-size:13px;
+  border-top:1px solid #a86b3b55;
+}
+footer img{
+  width:35px;height:35px;object-fit:cover;
+  border-radius:50%;vertical-align:middle;
+  margin-left:8px;
+}
+footer a{color:#ffbd72;text-decoration:none}
+.leaves{
+  position:fixed;top:-30px;z-index:-1;
+  animation:fall linear infinite;
+  opacity:.55;pointer-events:none;
+}
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(720deg)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="CLAN.jpg" alt="تصویر کلن">
+  <h1>🍁 حزب آلمان | پرشین ماین</h1>
+  <p class="subtitle">ساختار و معرفی کلن رول‌پلی</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>🤴 رهبر کلن</h2>
+    <div class="leader">
+      <img src="Leader.jpg" alt="تصویر رهبر">
+      <div>
+        <h3>MICHEAL_OLISE_</h3>
+        <p style="color:#c9a98c;margin:8px 0">Leader · رهبر کلن</p>
+        <a class="btn" href="ranks.html">مشاهده مقامات</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>⛏️ سرور پرشین ماین</h2>
+    <div class="server">
+      <img src="Server.jpg" alt="تصویر سرور">
+      <div>
+        <h3>PersianMine</h3>
+        <p style="color:#c9a98c;margin:8px 0">پرشین ماین</p>
+        <a class="btn" href="https://rubika.ir/joinc/EHCBGIGI0BCJFEPUMOQIXHTHXUJASCXT" target="_blank" rel="noopener">کانال سرور</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" style="text-align:center">
+    <h2>🍂 گروه رسمی کلن</h2>
+    <a class="btn" href="https://rubika.ir/joing/%2BBACEDFHCJ0BKQUMNACDBFEGTPLYWTICY" target="_blank" rel="noopener">ورود به گروه کلن</a>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <img src="Arzda.jpg" alt="Arzda">
+    طراحی و توسعه:
+    <a href="https://rubika.ir/arzda_1" target="_blank" rel="noopener">@Arzda_1 ✓</a>
+  </div>
+  <p style="margin-top:12px">کلن معتبر پرشین ماین ✓</p>
+  <p style="margin-top:8px">© 2026 PersianMine Clan</p>
+</footer>
+
+<audio id="backgroundMusic" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// پخش موسیقی پس از اولین تعامل کاربر
+const music = document.getElementById("backgroundMusic");
+let musicStarted = false;
+
+function startMusic(){
+  if(musicStarted) return;
+  music.play().then(()=>{
+    musicStarted = true;
+  }).catch(()=>{});
+}
+
+document.addEventListener("click",startMusic,{once:false});
+document.addEventListener("touchstart",startMusic,{once:false});
+
+// برگ‌های پاییزی
+for(let i=0;i<15;i++){
+  const leaf=document.createElement("div");
+  leaf.className="leaves";
+  leaf.textContent="🍂";
+  leaf.style.left=Math.random()*100+"%";
+  leaf.style.animationDuration=(7+Math.random()*10)+"s";
+  leaf.style.animationDelay=Math.random()*8+"s";
+  leaf.style.fontSize=(14+Math.random()*15)+"px";
+  document.body.appendChild(leaf);
+}
+</script>
+
+</body>
+</html>
